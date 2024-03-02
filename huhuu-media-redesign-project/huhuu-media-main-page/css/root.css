@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+:root {
+    --background-color: #f9f9f9;
+    --text-color: #0f0f0f;
+    --link-color: #fd2a77;
+
+    --font-family: 'Space Grotesk', 'Syne', 'Inter', sans-serif;
+    --heading-font: 'Syne', sans-serif;
+    --body-font: 'Space Grotesk', sans-serif;
+}
+
+/* Basic Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-weight: 400;
+    letter-spacing: -.5px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}

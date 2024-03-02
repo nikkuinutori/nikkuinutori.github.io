@@ -1,0 +1,98 @@
+/* Upper Deck */
+
+.upper-deck {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 30px 0;
+}
+
+.upper-deck-mode-switch {
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.mode-switch-container {
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.mode-switch-input {
+    position: absolute;
+    outline: none;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.mode-switch-slider {
+    display: block;
+    position: relative;
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    height: 20px;
+    width: 35px;
+    transition: background-color .25s ease;
+}
+
+.mode-switch-slider-knob {
+    display: block;
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    height: 15px;
+    width:  15px;
+    top: 2.5px;
+    left: 2.5px;
+    transition: .25s ease;
+
+}
+
+.switch-slider-explanation {
+    color: var(--link-color);
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 6px;
+
+}
+
+.mode-switch-input:checked ~ .mode-switch-slider {
+    background-color: #fd2a77;
+}
+
+.mode-switch-input:checked ~ .mode-switch-slider .mode-switch-slider-knob {
+    left: 18px;
+}
+
+.language-select {
+    display: flex;
+    position: static;
+    flex-basis: 12%;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.language {
+    display: inline-flex;
+    font-weight: 600;
+    color: var(--link-color)
+}

@@ -1,0 +1,124 @@
+/* Share and Discuss Container */
+
+.share-and-discuss-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    width: 100%;
+}
+
+.discuss-container {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 48px 0;
+}
+
+.discuss-container-canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.discuss-container-content {
+    margin: 0 24px;
+}
+
+.discuss-container-title {
+    color: #f9f9f9;
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 24px;
+    max-width: 650px;
+}
+
+.discuss-container-text {
+    color: #f9f9f9;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.discuss-container-social-link {
+    color: #f9f9f9;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: #fd2a77;
+    text-underline-offset: 2.5px;
+}
+
+.discuss-container-social-link:hover {
+    color: #fd2a77;
+}
+
+
+.share-container {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #0f0f0f;
+    padding: 48px 0;
+}
+
+.share-container-title {
+    color: #f9f9f9;
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 650px;
+    padding: 0px 17px;
+}
+
+.share-social-links-list {
+    display: flex;
+    list-style: none;
+    margin: 0 -17px;
+    padding: 0;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 8px;
+    justify-content: center;
+    max-width: 650px;
+}
+
+.share-social-links-list li {
+    line-height: 24px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    text-align: center;
+}
+
+.share-social-links-list li a {
+    color: #f9f9f9;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: #fd2a77;
+    text-underline-offset: 2.5px;
+}
+
+.share-social-links-list li a:hover {
+    color: #fd2a77;
+}
+
+@media only screen and (max-width: 768px) {
+    .share-and-discuss-container {
+      grid-template-columns: 1fr;
+    }
+}

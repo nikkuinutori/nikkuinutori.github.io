@@ -1,0 +1,46 @@
+/* Header */ 
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin-bottom: 60px;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo svg {
+    display: block;
+    z-index: -1;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        margin-bottom: 100px;
+    }
+}

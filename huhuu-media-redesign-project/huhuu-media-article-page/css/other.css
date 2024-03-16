@@ -1,0 +1,30 @@
+/* Scroll Up */
+
+.scroll-up {
+    position: fixed;
+    display: inline-flex;
+    right: 15px;
+    bottom: -50%;
+    padding: 6.5px;
+    background-color: #0f0f0f;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    transition: bottom .4s, transform .4s, background-color .4s;
+}
+
+.scroll-up:hover {
+    transform: translateY(-5px);
+    background-color: #fd2a77;
+}
+
+.scroll-up svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.show-scroll {
+    bottom: 45px;
+}
